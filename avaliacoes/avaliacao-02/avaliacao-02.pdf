@@ -1,1 +1,37 @@
-formato pdf
+Exercícios / Estrutura de repetição
+
+Respostas:
+
+1.a) A principal diferença entre o while e o do-while é que enquanto o comando while avalia a condição para depois executar uma sequência de comandos, o comando do-while
+executa uma sequência de comandos para depois testar a condição. O do-while é utilizado sempre que se deseja que a sequência de comandos seja executada pelo menos uma vez.
+No while a condição pode ser falsa logo na primeira repetição, dessa forma a sequência pode não ser executada.
+
+b)
+
+#include <stdio.h>
+int main()
+{
+  int i;
+  for (i=0;i<=100;i=i+5)
+  { 
+    if (i%2==0)
+      printf("%d"\n", i);
+  }
+    return 0;
+ }
+ 
+ 2.a)
+ 
+ #include <stdio.h>
+ int main() 
+{
+  int i = 1;
+  while (i < 1000) 
+  { 
+    i++;
+    if (i%4!=0) 
+      continue;
+    printf("%d\n", i);  
+  } 
+   return 0;
+}
