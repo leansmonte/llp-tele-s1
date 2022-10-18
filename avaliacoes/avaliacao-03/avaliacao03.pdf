@@ -1,3 +1,6 @@
+
+a)
+
 #include <stdio.h>
 #include <math.h>
 
@@ -61,4 +64,37 @@ float a, b, c, delta,raiz1,raiz2;
 
   
     return 0;
+}
+
+b)
+
+#include <stdio.h>
+#include<string.h>
+
+void inverter (char str [])
+ {
+  int t=strlen(str);
+  int i;
+  int a;
+  int f;
+  f=t-1;
+  for (i=0;i<t/2;i++)
+       {
+       a=str[i];
+       str[i]=str[f];
+       str[f]=a;
+       f--;
+       }
+
+  }
+
+int main()
+{
+  char str[50];
+  printf(!"digite:\n");
+  scanf("%s",&str);
+  inverter(str);
+  printf("%s\n",str);
+  
+  return 0;
 }
